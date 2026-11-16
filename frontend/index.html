@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaasan Eläinsuoja – Adoptio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🐾 Vaasan Eläinsuoja</h1>
+        <p>Löydä uusi ystävä ja anna eläimelle rakastava koti!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Adoptoitavat eläimet</h2>
+            <div id="animals" class="animal-grid">
+                <p>Ladataan eläimiä...</p>
+            </div>
+        </section>
+
+        <section id="animal-details" class="hidden">
+            <h2>Eläimen tiedot</h2>
+            <div id="details-content"></div>
+
+            <h3>Adoptiohakemus</h3>
+            <form id="adoption-form">
+                <label for="applicant-name">Nimi</label>
+                <input id="applicant-name" type="text" required>
+
+                <label for="applicant-email">Sähköposti</label>
+                <input id="applicant-email" type="email" required>
+
+                <label for="applicant-message">Miksi haluaisit adoptoida eläimen?</label>
+                <textarea id="applicant-message" rows="4"></textarea>
+
+                <button type="submit">Lähetä adoptiohakemus</button>
+            </form>
+
+            <p id="form-message" role="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Vaasan Eläinsuoja – Opiskelijaprojekti</p>
+    </footer>
+</body>
+</html>

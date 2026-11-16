@@ -1,0 +1,21 @@
+@"
+# Node.js
+node_modules/
+npm-debug.log*
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# Ympäristömuuttujat
+.env
+.env.*
+
+# Käyttöjärjestelmä
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+"@ | Set-Content -Path "C:\projekti\.gitignore" -Encoding utf8
